@@ -11,7 +11,7 @@ const SearchBox = ({ navigate }) => {
 
     // try {
     //   const response = await fetch(
-    //     `http://localhost:5000/api/search/${searchQuery}`
+    //     `https://bintus-commerce.onrender.com/api/search/${searchQuery}`
     //   )
     //   if (response.ok) {
     //     const data = await response.json()
