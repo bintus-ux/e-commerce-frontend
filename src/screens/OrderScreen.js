@@ -88,18 +88,18 @@ const OrderScreen = () => {
           },
         }
         const body = {
-          reference: res.reference,
           id: order._id,
+          status: res.status,
+          update_time: new Date(),
+          email_address: user.email,
         }
-        console.log(res)
         axios
-          .post('/api/orders/pay', body, config)
+          .put(`http://localhost:5000/api/orders/${id}/pay`, body, config)
           .then((resp) => {
-            console.log(resp)
             window.location.reload()
           })
           .catch((err) => {
-            console.log(err)
+            console.error(err)
           })
       }
     },
