@@ -58,7 +58,7 @@ h2 {
    }
    @media (max-width: 767px) {
      .carousel img {
-       height: 150px;
+       height: 200px;
        margin-top: 80px;
        margin-left: 10%;
      }
