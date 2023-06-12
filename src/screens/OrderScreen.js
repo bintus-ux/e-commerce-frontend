@@ -94,7 +94,11 @@ const OrderScreen = () => {
           email_address: user.email,
         }
         axios
-          .put(`http://localhost:5000/api/orders/${id}/pay`, body, config)
+          .put(
+            `https://bintus-commerce.onrender.com/api/orders/${id}/pay`,
+            body,
+            config
+          )
           .then((resp) => {
             window.location.reload()
           })
